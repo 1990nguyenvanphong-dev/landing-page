@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HDPHARMA - Công ty Cổ phần Dược Vật tư Y tế Hải Dương</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'medical-red': '#DC2626',
+                        'medical-red-dark': '#B91C1C',
+                        'medical-red-light': '#EF4444',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold text-medical-red">HDPHARMA</h1>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="text-gray-700 hover:text-medical-red px-3 py-2 text-sm font-medium transition">Trang chủ</a>
+                        <a href="#about" class="text-gray-700 hover:text-medical-red px-3 py-2 text-sm font-medium transition">Giới thiệu</a>
+                        <a href="#services" class="text-gray-700 hover:text-medical-red px-3 py-2 text-sm font-medium transition">Sản phẩm</a>
+                        <a href="#contact" class="text-gray-700 hover:text-medical-red px-3 py-2 text-sm font-medium transition">Liên hệ</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-medical-red">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-medical-red">Trang chủ</a>
+                <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-medical-red">Giới thiệu</a>
+                <a href="#services" class="block px-3 py-2 text-gray-700 hover:text-medical-red">Sản phẩm</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-medical-red">Liên hệ</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-20 bg-gradient-to-br from-medical-red via-medical-red-dark to-medical-red-light text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                        Dược Vật tư Y tế
+                        <span class="block text-yellow-300">Chất lượng - Uy tín</span>
+                    </h2>
+                    <p class="text-xl mb-8 text-gray-100">
+                        Công ty Cổ phần Dược Vật tư Y tế Hải Dương - Đối tác tin cậy trong lĩnh vực y tế và dược phẩm
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contact" class="bg-white text-medical-red px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition shadow-lg text-center">
+                            Liên hệ ngay
+                        </a>
+                        <a href="#about" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-medical-red transition text-center">
+                            Tìm hiểu thêm
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-8 shadow-2xl">
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="bg-white/20 rounded-lg p-6 text-center">
+                                <i class="fas fa-pills text-4xl mb-4"></i>
+                                <h3 class="text-2xl font-bold">20+</h3>
+                                <p class="text-sm">Năm kinh nghiệm</p>
+                            </div>
+                            <div class="bg-white/20 rounded-lg p-6 text-center">
+                                <i class="fas fa-users text-4xl mb-4"></i>
+                                <h3 class="text-2xl font-bold">1000+</h3>
+                                <p class="text-sm">Khách hàng tin tưởng</p>
+                            </div>
+                            <div class="bg-white/20 rounded-lg p-6 text-center">
+                                <i class="fas fa-box text-4xl mb-4"></i>
+                                <h3 class="text-2xl font-bold">500+</h3>
+                                <p class="text-sm">Sản phẩm đa dạng</p>
+                            </div>
+                            <div class="bg-white/20 rounded-lg p-6 text-center">
+                                <i class="fas fa-award text-4xl mb-4"></i>
+                                <h3 class="text-2xl font-bold">ISO</h3>
+                                <p class="text-sm">Chứng nhận chất lượng</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Về chúng tôi</h2>
+                <div class="w-24 h-1 bg-medical-red mx-auto mb-6"></div>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    Công ty Cổ phần Dược Vật tư Y tế Hải Dương với hơn 20 năm kinh nghiệm trong ngành dược phẩm và vật tư y tế
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800&h=600&fit=crop" alt="About Us" class="rounded-lg shadow-xl">
+                </div>
+                <div>
+                    <h3 class="text-3xl font-bold text-gray-900 mb-6">Cam kết chất lượng</h3>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Với hơn 20 năm hoạt động trong lĩnh vực dược phẩm và vật tư y tế, HDPHARMA đã khẳng định vị thế là một trong những công ty hàng đầu tại khu vực Hải Dương và cả nước.
+                    </p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Chúng tôi cam kết mang đến những sản phẩm chất lượng cao, đảm bảo an toàn cho sức khỏe người tiêu dùng, với đội ngũ nhân viên chuyên nghiệp và hệ thống phân phối rộng khắp.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-medical-red text-xl mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Sản phẩm đa dạng</h4>
+                                <p class="text-gray-600">Đầy đủ các loại dược phẩm và vật tư y tế</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-medical-red text-xl mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Chất lượng đảm bảo</h4>
+                                <p class="text-gray-600">Tuân thủ nghiêm ngặt các tiêu chuẩn GMP, ISO</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-medical-red text-xl mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Dịch vụ chuyên nghiệp</h4>
+                                <p class="text-gray-600">Đội ngũ tư vấn giàu kinh nghiệm, hỗ trợ 24/7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Sản phẩm & Dịch vụ</h2>
+                <div class="w-24 h-1 bg-medical-red mx-auto mb-6"></div>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    Cung cấp đầy đủ các sản phẩm dược phẩm và vật tư y tế chất lượng cao
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition hover:-translate-y-2">
+                    <div class="bg-medical-red/10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-pills text-medical-red text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Dược phẩm</h3>
+                    <p class="text-gray-600 mb-4">
+                        Cung cấp đầy đủ các loại thuốc kê đơn và không kê đơn, đảm bảo chất lượng và nguồn gốc rõ ràng.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-medical-red mr-2"></i>Thuốc kê đơn</li>
+                        <li><i class="fas fa-check text-medical-red mr-2"></i>Thuốc không kê đơn</li>
+                        <li><i class="fas fa-check text-medical-red mr-2"></i>Thực phẩm chức năng</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition hover:-translate-y-2">
+                    <div class="bg-medical-red/10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-syringe text-medical-red text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Vật tư y tế</h3>
+                    <p class="text-gray-600 mb-4">
+                        Cung cấp các thiết bị và vật tư y tế cần thiết cho bệnh viện, phòng khám và cơ sở y tế.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-medical-red mr-2"></i>Thiết bị y tế</li>
+                        <li><i class="fas fa-check text-medical-red mr-2"></i>Vật tư tiêu hao</li>
+                        <li><i class="fas fa-check text-medical-red mr-2"></i>Dụng cụ y khoa</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition hover:-translate-y-2">
+                    <div class="bg-medical-red/10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-user-md text-medical-red text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Tư vấn chuyên môn</h3>
+                    <p class="text-gray-600 mb-4">
+                        Đội ngũ dược sĩ và chuyên gia giàu kinh nghiệm sẵn sàng tư vấn và hỗ trợ khách hàng.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-medical-red mr-2"></i>Tư vấn dược phẩm</li>
+                        <li><i class="fas fa-check text-medical-red mr-2"></i>Hỗ trợ kỹ thuật</li>
+                        <li><i class="fas fa-check text-medical-red mr-2"></i>Dịch vụ sau bán hàng</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 bg-medical-red text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-5xl font-bold mb-2">20+</div>
+                    <div class="text-xl text-gray-200">Năm kinh nghiệm</div>
+                </div>
+                <div>
+                    <div class="text-5xl font-bold mb-2">500+</div>
+                    <div class="text-xl text-gray-200">Sản phẩm</div>
+                </div>
+                <div>
+                    <div class="text-5xl font-bold mb-2">1000+</div>
+                    <div class="text-xl text-gray-200">Khách hàng</div>
+                </div>
+                <div>
+                    <div class="text-5xl font-bold mb-2">50+</div>
+                    <div class="text-xl text-gray-200">Đối tác</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Liên hệ với chúng tôi</h2>
+                <div class="w-24 h-1 bg-medical-red mx-auto mb-6"></div>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    Hãy liên hệ với chúng tôi để được tư vấn và hỗ trợ tốt nhất
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Thông tin liên hệ</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-medical-red/10 w-12 h-12 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-map-marker-alt text-medical-red"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-1">Địa chỉ</h4>
+                                <p class="text-gray-600">Số 102, phố Chi Lăng, Phường Nguyễn Trãi,<br>Thành phố Hải Dương, Tỉnh Hải Dương, Việt Nam</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-medical-red/10 w-12 h-12 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-phone text-medical-red"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-1">Điện thoại</h4>
+                                <p class="text-gray-600">+84589434963</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-medical-red/10 w-12 h-12 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope text-medical-red"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-1">Email</h4>
+                                <p class="text-gray-600">1990nguyenvanphong@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <form class="bg-gray-50 rounded-lg p-8">
+                        <div class="mb-6">
+                            <label class="block text-gray-700 font-semibold mb-2">Họ và tên</label>
+                            <input type="text" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-medical-red focus:ring-2 focus:ring-medical-red/20 outline-none transition" placeholder="Nhập họ và tên">
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-gray-700 font-semibold mb-2">Email</label>
+                            <input type="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-medical-red focus:ring-2 focus:ring-medical-red/20 outline-none transition" placeholder="Nhập email">
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-gray-700 font-semibold mb-2">Số điện thoại</label>
+                            <input type="tel" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-medical-red focus:ring-2 focus:ring-medical-red/20 outline-none transition" placeholder="Nhập số điện thoại">
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-gray-700 font-semibold mb-2">Tin nhắn</label>
+                            <textarea rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-medical-red focus:ring-2 focus:ring-medical-red/20 outline-none transition" placeholder="Nhập tin nhắn"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-medical-red text-white px-8 py-4 rounded-lg font-semibold hover:bg-medical-red-dark transition shadow-lg">
+                            Gửi tin nhắn
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">HDPHARMA</h3>
+                    <p class="text-gray-400 mb-4">
+                        Công ty Cổ phần Dược Vật tư Y tế Hải Dương - Đối tác tin cậy trong lĩnh vực y tế và dược phẩm
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-medical-red transition">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-medical-red transition">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-medical-red transition">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Liên kết nhanh</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#home" class="hover:text-medical-red transition">Trang chủ</a></li>
+                        <li><a href="#about" class="hover:text-medical-red transition">Giới thiệu</a></li>
+                        <li><a href="#services" class="hover:text-medical-red transition">Sản phẩm</a></li>
+                        <li><a href="#contact" class="hover:text-medical-red transition">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Sản phẩm</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-medical-red transition">Dược phẩm</a></li>
+                        <li><a href="#" class="hover:text-medical-red transition">Vật tư y tế</a></li>
+                        <li><a href="#" class="hover:text-medical-red transition">Thiết bị y tế</a></li>
+                        <li><a href="#" class="hover:text-medical-red transition">Thực phẩm chức năng</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Thông tin</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Mã số doanh nghiệp: 0800010118</li>
+                        <li>Thành lập: 2003</li>
+                        <li>Vốn điều lệ: 203.996.300.000 VNĐ</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 HDPHARMA. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Smooth scroll script -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+            });
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-white/95', 'backdrop-blur-sm');
+            } else {
+                nav.classList.remove('bg-white/95', 'backdrop-blur-sm');
+            }
+        });
+    </script>
+</body>
+</html>
+
